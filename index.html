@@ -12,14 +12,61 @@
     <!-- Connect Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Connect Font Awesome -->
+    <script src="https://kit.fontawesome.com/edce570db7.js" crossorigin="anonymous"></script>
+
     <!-- Connect CSS -->
     <link rel="stylesheet" href="./tailwind.init.css">
 
 </head>
 
-<body>
+<body class="border bg-[#41ff6b1a]">
 
-    <h3>Assignment 05</h3>
+    <!-- Navbar Section -->
+    <nav class="px-[60px] py-[25px] flex justify-between items-center bg-white">
+        <!-- Left Side -->
+        <div class="flex items-center gap-[10px]">
+            <div class="w-[50px]">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="font-extrabold text-[#006747] text-2xl">
+                <p>Emergency <br> Service</p>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex justify-center items-center gap-5 inter-font">
+            <div>
+                <button class="bg-[#41ff6b1a] flex justify-center items-center rounded-[50px] px-9 py-[14px]">
+                    <div class="flex items-center justify-center gap-[10px]">
+                        <span class="font-black">0</span>
+                        <img class="w-6" src="./assets/heart.png" alt="">
+                    </div>
+                </button>
+            </div>
+            <div>
+                <button class="bg-[#41ff6b1a] flex justify-center items-center rounded-[50px] px-9 py-[14px]">
+                    <div class="flex items-center justify-center gap-[10px]">
+                        <span class="font-black">100</span>
+                        <img class="w-6" src="./assets/coin.png" alt="">
+                    </div>
+                </button>
+            </div>
+            <div>
+                <button class="bg-[#00A63E] text-white flex justify-center items-center rounded-[50px] px-9 py-[14px]">
+                    <div class="flex items-center justify-center gap-[5px] font-semibold">
+                        <span>0</span>
+                        <p>Copy</p>
+                    </div>
+                </button>
+            </div>
+            <!-- <div>
+                <button
+                    class="btn bg-[#00A63E] font-semibold text-[16px] rounded-[50px] text-white px-9 py-7"><span>0</span>
+                    Copy</button>
+            </div> -->
+        </div>
+    </nav>
 
 </body>
 
