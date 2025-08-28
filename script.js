@@ -53,6 +53,7 @@ for(const callButton of callButtons){
             const serviceNumber = callButton.parentNode.parentNode.children[1].children[0].innerText;
             alert("Calling " + serviceName + " " + serviceNumber);
 
+            //Create new div for history container
             const newHistory = document.createElement('div');
             newHistory.innerHTML = `
             <div class="flex justify-between items-center bg-gray-50 rounded-[8px] p-[16px] mt-[8px]">
@@ -67,6 +68,14 @@ for(const callButton of callButtons){
             `;
             historyContainer.appendChild(newHistory);
 
+            // Get access Call History Section Clear Button
+            // set Clear Button id 'clear-history'
+            const clearHistoryButton = getId('clear-history');
+            clearHistoryButton.addEventListener('click', function(){
+                newHistory.innerHTML = " ";
+            });
+
+            // Decrease Navbar Coin Value
             const coinValueDecrease = Number(coinValue) - 20;document.getElementById('coin-value').innerText = coinValueDecrease;
         }
         else{
@@ -77,5 +86,8 @@ for(const callButton of callButtons){
 }
 
 
-// //Create new div for history container
+
+
+
+
             
