@@ -95,6 +95,11 @@ const copyButtons = document.getElementsByClassName('copy-btn');
 for(const copyButton of copyButtons){
     copyButton.addEventListener('click', function(){
         const serviceNumber = copyButton.parentNode.parentNode.children[1].children[0].innerText;
+
+        // Add copy hotline number after clicking copy button
+        navigator.clipboard.writeText(serviceNumber);
+
+        // set alert
         alert("নম্বর কপি হয়েছে: " + serviceNumber);
 
 
