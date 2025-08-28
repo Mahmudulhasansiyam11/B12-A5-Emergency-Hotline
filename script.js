@@ -87,6 +87,27 @@ for(const callButton of callButtons){
 
 
 
+//Copy Buttons
+// Main section every card copy buttons set same class name "copy-btn"
+// Navbar section copy value set id 'copy-value'
+const copyButtons = document.getElementsByClassName('copy-btn');
+
+for(const copyButton of copyButtons){
+    copyButton.addEventListener('click', function(){
+        const serviceNumber = copyButton.parentNode.parentNode.children[1].children[0].innerText;
+        alert("নম্বর কপি হয়েছে: " + serviceNumber);
+
+
+         //Get access navbar copy value
+        const copyValue = getInnerText('copy-value');
+        const copyValueIncrease = Number(copyValue) + 1;
+        document.getElementById('copy-value').innerText = copyValueIncrease;
+    });
+}
+
+
+
+
 
 
 
