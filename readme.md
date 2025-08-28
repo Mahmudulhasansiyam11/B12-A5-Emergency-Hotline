@@ -24,12 +24,15 @@ If I want to access another class or id or element inside a specific class or id
 ### 2. How do you **create and insert a new element into the DOM**?
 
 Suppose I have a section container whose id is main-container. At the beginning I will access that section container.
+
 const mainContainer = document.getElementById('main-container');
 
 Now Create a new div element into the DOM using createElement method.
+
 const div = document.createElement('div');
 
 Now insert a new div element into the DOM using appendChild method.
+
 mainContainer.appendChild('div');
 
 This way **create and insert a new element into the DOM**
@@ -55,11 +58,13 @@ e.stopPropagation();
 
 **preventDefault()** is use to stop page reload.
 If we don't use type='button' in the button, then by default is assumed as submit button, so if we click in the button, the page reloads. **preventDefault()** is used to stop this page reload.
+
 document.getElementById(btn_id_name).addEventListener('click',function(e){
 e.preventDefault();
 });
 
 **stopPropagation()** is used to stop Event Bubbling.
+
 document.getElementById(id_name).addEventListener('click',function(e){
 e.stopPropagation();
 });
